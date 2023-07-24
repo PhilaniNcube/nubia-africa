@@ -89,6 +89,14 @@
   }
 }
 
+.hero-image {
+ -webkit-mask-image: url("/images/africa-1.svg");
+ -webkit-mask-size: contain;
+ -webkit-mask-origin: content-box;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
 
 svg rect {
  fill: white;

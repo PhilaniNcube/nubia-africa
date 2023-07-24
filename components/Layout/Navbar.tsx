@@ -3,8 +3,8 @@ import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <nav className="sticky bg-white shadow-md z-10 backdrop-blur-lg top-0 left-0 right-0">
-      <div className=" container py-3">
+    <nav className="sticky top-0 left-0 right-0 z-10 bg-white shadow-md backdrop-blur-lg">
+      <div className="container py-3">
         <DesktopNav />
         <MobileNav />
       </div>

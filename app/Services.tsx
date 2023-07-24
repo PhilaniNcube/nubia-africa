@@ -12,37 +12,42 @@ import Link from "next/link";
 const services = [
   {
     id: 1,
-    title: "Accounting & Financial Management",
-    href: "accounting-and-fiancial-management",
+    title: "Accounting and Bookkeeping",
+    href: "accounting-and-bookkeeping",
     tags: [
-      "Bookkeeping",
-      "Monthly Management Accounts",
-      "Bank Reconciliations",
-      "Creditors & Debtors Management",
-      "Interim and Annual Financial Statements",
+      "We offer a full range of accounting and bookkeeping services, including financial statement preparation, general ledger maintenance, accounts payable and receivable management, payroll processing, and bank reconciliation.",
     ],
   },
   {
     id: 2,
-    title: "Corporate Tax Compliance",
-    href: "corporate-tax-compliance",
+    title: "Tax Planning",
+    href: "tax-planning",
     tags: [
-      "Tax Registration",
-      "Interim & Annual Tax Returns",
-      "Value Added Tax (VAT) Returns",
-      "Payroll Taxes - PAYE, UIF etc",
-      "SARS Audit, Objections & Appeals",
+      "We provide strategic tax planning services to help businesses and individuals minimize tax liabilities and optimize their tax positions. Our team identifies tax-saving opportunities and develops customized plans that align with our clients' financial objectives. Our team of tax experts stays up-to-date with the latest tax laws, regulations, and incentives to provide accurate and effective tax planning strategies. We conduct comprehensive tax reviews to identify potential tax-saving opportunities ",
     ],
   },
   {
     id: 3,
-    title: "Payroll Services",
-    href: "payroll-services",
+    title: "Tax Preparation",
+    href: "tax-preparation",
     tags: [
-      "Reconciliations",
-      "Payroll processing and payslips",
-      "Mid-year & year end submissions",
-      "Registration with authorities (PAYE/UIF/SDL)",
+      "Our tax professionals are well-versed in tax laws and regulations. We offer comprehensive tax preparation services, ensuring accurate and timely filing of tax returns for individuals, businesses, and trusts. We stay updated on the latest tax code changes to ensure compliance.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Tax Compliance",
+    href: "tax-compliance",
+    tags: [
+      "We assist businesses and individuals in meeting their tax compliance obligations. Our team helps clients understand and fulfil their tax filing requirements, including preparing and filing various tax forms, such as income tax returns, VAT returns, payroll tax returns, and more.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Tax Dispute Resolution",
+    href: "tax-dispute-resolution",
+    tags: [
+      "In the event of tax disputes or audits, our experienced tax advisors provide expert representation and guidance. Our experienced professionals provide effective representation and advocacy for our clients. We work closely with tax authorities to resolve controversies, minimize penalties, and protect our clients' rights, striving for fair and favourable outcomes in tax dispute resolutions.",
     ],
   },
 ];
@@ -50,29 +55,30 @@ const services = [
 const Services = () => {
   return (
     <section className="container py-10">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">{
-        services.map((service) => (
-          <Card key={service.id} className="bg-slate-50">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 ">
+        {services.map((service) => (
+          <Card key={service.id} className="w-full bg-slate-100 lg:last-of-type:col-start-3 ">
             <CardHeader>
               <CardTitle>{service.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              {service.tags.map((tag) => (
-                <CardDescription key={tag}>
-                  {tag}
-                </CardDescription>
+              {service.tags.map((tag, idx) => (
+                <CardDescription className="" key={idx}>{tag}</CardDescription>
               ))}
             </CardContent>
             <CardFooter>
               <Link href={`/services/${service.href}`}>
-                <Button type="button" className="hover:bg-slate-800 bg-black text-white font-bold py-2 px-4 rounded">
+                <Button
+                  type="button"
+                  className="px-4 py-2 font-bold text-white bg-black rounded hover:bg-slate-800"
+                >
                   Read More
                 </Button>
               </Link>
             </CardFooter>
           </Card>
-        ))
-      }</div>
+        ))}
+      </div>
     </section>
   );
 };

@@ -12,8 +12,8 @@ const links = [
   },
   {
     id: 2,
-    name: "Team",
-    href: "/team",
+    name: "About",
+    href: "/about",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const DesktopNav = () => {
 
   return (
     <div>
-      <div className="hidden md:flex justify-between bg-white">
+      <div className="justify-between hidden bg-white md:flex">
         <Link href="/">
           <Image
             onClick={() => setActiveTab(1)}
@@ -41,11 +41,11 @@ const DesktopNav = () => {
             width={328.82}
             height={323.15}
             alt="Logo"
-            className="w-16 object-cover"
+            className="object-cover w-16"
           />
         </Link>
 
-        <ul className="flex space-x-3 items-center ">
+        <ul className="flex items-center space-x-3 ">
           {links.map((link) => (
             <Link
               onClick={() => setActiveTab(link.id)}
@@ -58,13 +58,13 @@ const DesktopNav = () => {
               {activeTab === link.id && (
                 <motion.div
                   layoutId="active-pill"
-                  className="bg-black absolute inset-0"
+                  className="absolute inset-0 bg-black"
                   // transition={{ duration: 3 }}
                   style={{ borderRadius: 9999 }}
                 />
               )}
 
-              <span className="relative z-10 text-white mix-blend-exclusion tracking-wide">
+              <span className="relative z-10 tracking-wide text-white mix-blend-exclusion">
                 {link.name}
               </span>
             </Link>
