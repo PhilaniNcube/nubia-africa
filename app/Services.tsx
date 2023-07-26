@@ -70,7 +70,7 @@ const Services = () => {
               <Link href={`/services/${service.href}`}>
                 <Button
                   type="button"
-                  className="px-4 py-2 font-bold text-white bg-black rounded hover:bg-slate-800"
+                  className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800"
                 >
                   Read More
                 </Button>
