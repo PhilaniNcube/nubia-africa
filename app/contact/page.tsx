@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -64,6 +65,9 @@ const page = () => {
             <Button type="submit" className="rounded-none bg-black w-1/2 mt-3" >Save</Button>
           </form>
         </div>
+      </div>
+      <div className="w-full mt-6">
+        <Image src="/images/contact.jpg" width={640} height={480} alt="Contact" className="w-full aspect-[4/1] object-cover" />
       </div>
     </main>
   );
