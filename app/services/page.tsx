@@ -1,4 +1,10 @@
+import Services from "../Services";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <main className="">
+      <Services />
+    </main>
+  );
 };
 export default page;
