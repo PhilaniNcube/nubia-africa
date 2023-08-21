@@ -27,10 +27,7 @@ export const raleway = Raleway({
   weight: ["400", "500","600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Nubia Africa",
-  description: "For all your accounting needs",
-};
+
 
 export default function RootLayout({
   children,

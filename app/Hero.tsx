@@ -33,7 +33,7 @@ const services = [
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-screen py-8 overflow-clip bg-slate-200 isolate">
+    <div className="relative w-full min-h-screen py-8 overflow-clip bg-slate-200 isolate -translate-y-[200px]">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/africa.svg"
@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="grid w-full grid-cols-1 lg:grid-cols-2 h-9/10">
           <div className="container relative z-20 flex flex-col items-start justify-center w-full text-black">
             <h1 className="text-3xl font-bold md:text-5xl lg:text-6xl">
-              Your partner in compliance
+              Your partner in tax compliance
             </h1>
 
             <Link href="/contact">
@@ -73,11 +73,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 my-4 -translate-y-20 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-4 my-4 -translate-y-[200px] sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {services.map((service, index) => (
             <div key={index} className="w-full px-2 py-5 bg-white rounded shadow">
               <h3 className="mb-2 font-bold text-md">{service.name}</h3>
-              <p className="text-xs">{service.description}</p>
+              <p className="text-xs line-clamp-5">{service.description}</p>
+
+              <Link href="/">Read More</Link>
             </div>
           ))}
         </div>

@@ -63,7 +63,7 @@ const Services = () => {
             </CardHeader>
             <CardContent>
               {service.tags.map((tag, idx) => (
-                <CardDescription className="" key={idx}>{tag}</CardDescription>
+                <CardDescription className="line-clamp-4" key={idx}>{tag}</CardDescription>
               ))}
             </CardContent>
             <CardFooter>

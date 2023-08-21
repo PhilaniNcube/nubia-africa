@@ -3,7 +3,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="container py-10">
-      <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
+      {/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
         <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-black font-extrabold uppercase mix-blend-multiply ">
           About Us
         </h1>
@@ -14,7 +14,7 @@ const page = () => {
           height={1280}
           alt="image"
         />
-      </div>
+      </div> */}
       <section className="w-full mt-6">
         <h2 className="mt-4 mb-1 text-3xl font-extrabold uppercase">
           Our Approach
@@ -26,6 +26,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Client-Centric:</strong> We prioritize building long-term
@@ -39,6 +40,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Expertise:</strong>Our team consists of highly skilled tax
@@ -52,6 +54,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Proactive Strategies:</strong> We stay up to date with the
@@ -65,6 +68,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Compliance and Accuracy:</strong> We emphasize accuracy
@@ -86,6 +90,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Personalized:</strong> We understand that each client has
@@ -99,6 +104,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Accuracy and Compliance:</strong> We adhere to the highest
@@ -112,6 +118,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Proactive Guidance:</strong> We keep a close eye on tax
@@ -125,6 +132,7 @@ const page = () => {
               width={1920}
               height={1080}
               alt="Clients"
+              className="grayscale"
             />
             <p className="mt-2 text-sm">
               <strong>Confidentiality and Integrity:</strong> We handle all
