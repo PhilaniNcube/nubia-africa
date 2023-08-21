@@ -33,7 +33,7 @@ const services = [
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div className="w-full overflow-clip min-h-screen py-8 relative bg-slate-200 isolate">
+    <div className="relative w-full min-h-screen py-8 overflow-clip bg-slate-200 isolate">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/africa.svg"
@@ -43,19 +43,19 @@ const Hero = () => {
           className="h-full opacity-60 scale-80 lg:translate-x-[300px] object-cover"
         />
       </div>
-      <section className="container shadow-md rounded-md relative py-6 bg-white/80 overflow-clip">
+      <section className="container relative py-6 rounded-md shadow-md bg-white/80 overflow-clip">
         {/* <h2 className="hidden lg:flex lg:absolute top-10 left-0 uppercase font-extrabold text-slate-400 text-6xl -rotate-90 -translate-x-[100px] translate-y-[100px] lg:translate-y-[340px]">
         Nubia{" "}
       </h2> */}
 
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 h-9/10">
-          <div className="container  relative z-20 flex flex-col items-start justify-center w-full text-black">
+        <div className="grid w-full grid-cols-1 lg:grid-cols-2 h-9/10">
+          <div className="container relative z-20 flex flex-col items-start justify-center w-full text-black">
             <h1 className="text-3xl font-bold md:text-5xl lg:text-6xl">
               Your partner in compliance
             </h1>
 
             <Link href="/contact">
-              <Button className="mt-3 text-xs md:text-md font-mono uppercase bg-black w-fit rounded-none">
+              <Button className="mt-3 text-xs tracking-wider uppercase bg-black rounded-none md:text-md font-raleway w-fit">
                 Get a free consultation today!
               </Button>
             </Link>
@@ -73,10 +73,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 -translate-y-20 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 my-4">
+        <div className="grid grid-cols-1 gap-4 my-4 -translate-y-20 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {services.map((service, index) => (
-            <div key={index} className="w-full px-2 py-5 shadow rounded bg-white">
-              <h3 className="text-md font-bold mb-2">{service.name}</h3>
+            <div key={index} className="w-full px-2 py-5 bg-white rounded shadow">
+              <h3 className="mb-2 font-bold text-md">{service.name}</h3>
               <p className="text-xs">{service.description}</p>
             </div>
           ))}

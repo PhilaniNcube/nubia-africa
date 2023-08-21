@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link";
 import {motion} from "framer-motion"
 import { usePathname } from "next/navigation";
+import { raleway } from "@/app/layout";
 
 const links = [
   {
@@ -33,7 +34,7 @@ const DesktopNav = () => {
 
 
   return (
-    <div>
+    <div className={raleway.className}>
       <div className="justify-between hidden bg-white md:flex">
         <Link href="/">
           <Image
@@ -54,7 +55,7 @@ const DesktopNav = () => {
               href={link.href}
               className={`${
                 pathname === link.href ? "" : "hover:text-neutral-700/50"
-              } rounded-full px-3 py-1.5 text-black  text-sm font-medium font-mono outline-2 outline-sky-400 focus-visible:outline relative transition`}
+              } rounded-full px-3 py-1.5 text-black  text-sm font-medium font-raleway outline-2 outline-sky-400 focus-visible:outline relative transition`}
             >
               {pathname === link.href && (
                 <motion.div
