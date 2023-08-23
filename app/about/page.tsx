@@ -11,19 +11,19 @@ const approach = [
     title: "Expertise",
     description:
       "Our team consists of highly skilled tax professionals with extensive knowledge of tax laws and regulations.",
-    image: "/images/expert.jpg",
+    image: "/images/income.jpg",
   },
   {
     title: "Proactive Strategies",
     description:
       "We stay up to date with the latest tax developments and proactively identify opportunities to minimize tax burdens and maximize savings.",
-    image: "/images/strategy.jpg",
+    image: "/images/money.jpg",
   },
   {
     title: "Compliance and Accuracy",
     description:
       "We emphasize accuracy and compliance in all our tax services, ensuring that our clients meet their tax obligations while minimizing the risk of penalties and audits.",
-    image: "/images/accuracy.jpg",
+    image: "/images/savings.jpg",
   },
 ];
 
