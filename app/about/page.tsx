@@ -1,5 +1,59 @@
 import Image from "next/image";
 
+const approach = [
+  {
+    title: "Client-Centric",
+    description:
+      "We prioritize building long-term relationships with our clients and providing personalized attention to their unique tax needs.",
+    image: "/images/consult.jpg",
+  },
+  {
+    title: "Expertise",
+    description:
+      "Our team consists of highly skilled tax professionals with extensive knowledge of tax laws and regulations.",
+    image: "/images/expert.jpg",
+  },
+  {
+    title: "Proactive Strategies",
+    description:
+      "We stay up to date with the latest tax developments and proactively identify opportunities to minimize tax burdens and maximize savings.",
+    image: "/images/strategy.jpg",
+  },
+  {
+    title: "Compliance and Accuracy",
+    description:
+      "We emphasize accuracy and compliance in all our tax services, ensuring that our clients meet their tax obligations while minimizing the risk of penalties and audits.",
+    image: "/images/accuracy.jpg",
+  },
+];
+
+const select = [
+  {
+    title: "Personalized",
+    description:
+      "We understand that each client has unique tax needs and goals, so we provide tailored solutions and one-on-one attention.",
+    image: "/images/personal.jpg",
+  },
+  {
+    title: "Accuracy and Compliance",
+    description:
+      "We adhere to the highest standards of accuracy and compliance, ensuring that our clients meet their tax obligations while optimizing their tax positions.",
+    image: "/images/tax-return.jpg",
+  },
+  {
+    title: "Proactive Guidance",
+    description:
+      "We keep a close eye on tax developments and proactively advise our clients on tax law changes and opportunities that may affect them.",
+    image: "/images/guide.jpg",
+  },
+  {
+    title: "Confidentiality and Integrity",
+    description:
+      "We handle all client information with the utmost confidentiality and maintain the highest ethical standards in our operations.",
+    image: "/images/secret.jpg",
+  },
+];
+
 const page = () => {
   return (
     <div className="container py-10">
@@ -20,63 +74,21 @@ const page = () => {
           Our Approach
         </h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
-          <div className="w-full">
-            <Image
-              src="/images/consult.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Client-Centric:</strong> We prioritize building long-term
-              relationships with our clients and providing personalized
-              attention to their unique tax needs.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/expert.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Expertise:</strong>Our team consists of highly skilled tax
-              professionals with extensive knowledge of tax laws and
-              regulations.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/strategy.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Proactive Strategies:</strong> We stay up to date with the
-              latest tax developments and proactively identify opportunities to
-              minimize tax burdens and maximize savings.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/accuracy.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Compliance and Accuracy:</strong> We emphasize accuracy
-              and compliance in all our tax services, ensuring that our clients
-              meet their tax obligations while minimizing the risk of penalties
-              and audits.
-            </p>
-          </div>
+          {approach.map((item, index) => (
+            <div key={index} className="w-full">
+              <Image
+                src={item.image}
+                width={1920}
+                height={1080}
+                alt={item.title}
+                className="grayscale"
+              />
+              <p className="mt-2 text-sm">
+                <strong className="text-lg">{item.title} </strong> <br />
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
       <section className="w-full mt-10">
@@ -84,62 +96,21 @@ const page = () => {
           Why Choose Us
         </h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
-          <div className="w-full">
-            <Image
-              src="/images/personal.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Personalized:</strong> We understand that each client has
-              unique tax needs and goals, so we provide tailored solutions and
-              one-on-one attention.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/compliance.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Accuracy and Compliance:</strong> We adhere to the highest
-              standards of accuracy and compliance, ensuring that our clients
-              meet their tax obligations while optimizing their tax positions.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/guide.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Proactive Guidance:</strong> We keep a close eye on tax
-              developments and proactively advise our clients on tax law changes
-              and opportunities that may affect them.
-            </p>
-          </div>
-          <div className="w-full">
-            <Image
-              src="/images/secret.jpg"
-              width={1920}
-              height={1080}
-              alt="Clients"
-              className="grayscale"
-            />
-            <p className="mt-2 text-sm">
-              <strong>Confidentiality and Integrity:</strong> We handle all
-              client information with the utmost confidentiality and maintain
-              the highest ethical standards in our operations.
-            </p>
-          </div>
+          {select.map((item, index) => (
+            <div className="w-full" key={index}>
+              <Image
+                src={item.image}
+                width={1920}
+                height={1080}
+                alt="Clients"
+                className="grayscale"
+              />
+              <p className="mt-2 text-sm">
+                <strong className="text-lg">{item.title} </strong> <br />
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </div>
