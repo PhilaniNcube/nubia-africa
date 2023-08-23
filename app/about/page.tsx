@@ -3,18 +3,18 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="container py-10">
-      {/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
-        <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-black font-extrabold uppercase mix-blend-multiply ">
+      <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
+        <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-white font-extrabold uppercase">
           About Us
         </h1>
         <Image
-          src="/images/building.jpg"
+          src="/images/tax.jpg"
           className="absolute inset-0 object-cover w-full h-full grayscale aspect-video"
-          width={1920}
-          height={1280}
+          width={1280}
+          height={853}
           alt="image"
         />
-      </div> */}
+      </div>
       <section className="w-full mt-6">
         <h2 className="mt-4 mb-1 text-3xl font-extrabold uppercase">
           Our Approach
