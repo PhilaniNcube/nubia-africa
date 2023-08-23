@@ -44,13 +44,13 @@ const select = [
     title: "Proactive Guidance",
     description:
       "We keep a close eye on tax developments and proactively advise our clients on tax law changes and opportunities that may affect them.",
-    image: "/images/guide.jpg",
+    image: "/images/docs.jpg",
   },
   {
     title: "Confidentiality and Integrity",
     description:
       "We handle all client information with the utmost confidentiality and maintain the highest ethical standards in our operations.",
-    image: "/images/secret.jpg",
+    image: "/images/locked.jpg",
   },
 ];
 
