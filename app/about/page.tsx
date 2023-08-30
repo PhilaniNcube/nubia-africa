@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Brand from "../Brand";
 
 const approach = [
   {
@@ -11,19 +12,19 @@ const approach = [
     title: "Expertise",
     description:
       "Our team consists of highly skilled tax professionals with extensive knowledge of tax laws and regulations.",
-    image: "/images/income.jpg",
+    image: "/images/expert.jpg",
   },
   {
     title: "Proactive Strategies",
     description:
       "We stay up to date with the latest tax developments and proactively identify opportunities to minimize tax burdens and maximize savings.",
-    image: "/images/money.jpg",
+    image: "/images/strategy.jpg",
   },
   {
     title: "Compliance and Accuracy",
     description:
       "We emphasize accuracy and compliance in all our tax services, ensuring that our clients meet their tax obligations while minimizing the risk of penalties and audits.",
-    image: "/images/savings.jpg",
+    image: "/images/accuracy.jpg",
   },
 ];
 
@@ -35,10 +36,10 @@ const select = [
     image: "/images/personal.jpg",
   },
   {
-    title: "Accuracy and Compliance",
+    title: "Reliability",
     description:
-      "We adhere to the highest standards of accuracy and compliance, ensuring that our clients meet their tax obligations while optimizing their tax positions.",
-    image: "/images/tax-return.jpg",
+      "We are committed to providing you with timely and accurate financial information. We understand that your business depends on it, and we won't let you down.",
+    image: "/images/reliable.jpg",
   },
   {
     title: "Proactive Guidance",
@@ -57,7 +58,7 @@ const select = [
 const page = () => {
   return (
     <div className="container py-10">
-      <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
+      {/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
         <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-white font-extrabold uppercase">
           About Us
         </h1>
@@ -68,7 +69,8 @@ const page = () => {
           height={853}
           alt="image"
         />
-      </div>
+      </div> */}
+      <Brand />
       <section className="w-full mt-6">
         <h2 className="mt-4 mb-1 text-3xl font-extrabold uppercase">
           Our Approach
@@ -103,7 +105,7 @@ const page = () => {
                 width={1920}
                 height={1080}
                 alt="Clients"
-                className="grayscale"
+                className="object-cover w-full grayscale aspect-video"
               />
               <p className="mt-2 text-sm">
                 <strong className="text-lg">{item.title} </strong> <br />

@@ -38,20 +38,22 @@ const services = [
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div className="relative w-full py-8 overflow-clip bg-slate-200">
+    <div className="relative w-full py-8 lg:pt-16 overflow-clip bg-slate-200">
       <div className="absolute inset-0 ">
-        <Image
-          src="/images/africa.svg"
-          width={1920}
-          height={1080}
-          alt="Watermark"
-          className="w-[65%] lg:-translate-y-[200px] opacity-70  lg:translate-x-[600px] object-cover"
-        />
+        <div className="container py-10">
+          <Image
+            src="/images/africa.svg"
+            width={1920}
+            height={1080}
+            alt="Watermark"
+            className="w-[70%] lg:-translate-y-[170px] opacity-70  lg:translate-x-[530px] object-cover"
+          />
+        </div>
       </div>
       <section className="container relative h-[80vh] py-6 rounded-md shadow-md bg-white/80 overflow-clip">
         <div className="flex flex-col h-full gap-4 md:flex-row">
           <div className="flex flex-col items-start justify-center w-full h-full text-black lg:-translate-y-8">
-            <h1 className="text-3xl hidden font-bold md:text-5xl lg:text-6xl">
+            <h1 className="hidden text-3xl font-bold md:text-5xl lg:text-6xl">
               Your partner in tax compliance
             </h1>
 
@@ -61,13 +63,13 @@ const Hero = () => {
               </Button>
             </Link>
           </div>{" "}
-          <div className="hidden lg:flex items-center justify-end w-full px-10 overflow-clip">
+          <div className="items-center justify-end hidden w-full px-10 lg:flex overflow-clip">
             <Image
               width="1024"
               height="1024"
               src="/images/Africa.webp"
               alt="people"
-              className="object-cover w-full  grayscale aspect-square"
+              className="object-cover w-full scale-90 grayscale aspect-square"
             />
           </div>
         </div>
@@ -75,9 +77,9 @@ const Hero = () => {
           {services.map((service, index) => (
             <div key={index} className="w-full px-2 py-5 rounded shadow-md bg-slate-200/90">
               <h3 className="mb-2 text-sm font-extrabold ">{service.name}</h3>
-              <p className="text-xs text-black line-clamp-4 mb-3">{service.description}</p>
+              <p className="mb-3 text-xs text-black line-clamp-4">{service.description}</p>
 
-              <Link href={service.href} className="font-bold text-xs bg-black hover:bg-slate-900 text-white mt-5 rounded-full px-4 py-2">Read More</Link>
+              <Link href={service.href} className="px-4 py-2 mt-5 text-xs font-bold text-white bg-black rounded-full hover:bg-slate-900">Read More</Link>
             </div>
           ))}
         </div> */}

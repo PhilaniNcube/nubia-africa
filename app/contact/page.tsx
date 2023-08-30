@@ -10,18 +10,18 @@ const page = () => {
     <main className="container py-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="w-full">
-          <h1 className="hidden text-4xl font-bold uppercase lg:text-6xl">
+          <h1 className="text-4xl font-bold uppercase sr-only  lg:text-6xl">
             Contact Us
           </h1>
           {/* <Separator className="my-4" /> */}
           <div className="w-full mt-3">
-            <p className="font-medium text-md md:text-lg">
+            <p className="text-sm font-medium ">
               We&apos;re here to help you with all of your tax and accounting
               needs. Whether you&apos;re a small business owner or a large
               corporation, we can provide you with the services you need to
               succeed.
             </p>
-            <p className="mt-3 font-medium text-md md:text-lg">
+            <p className="mt-3 text-sm font-medium ">
               Contact us today for a free consultation!
             </p>
             <div className="w-full mt-6">
@@ -36,7 +36,7 @@ const page = () => {
           </div>
         </div>
         <div className="w-full">
-          <form className="w-full mt-6">
+          <form className="w-full">
             <div className="flex gap-4 ">
               <div className="flex flex-col w-full my-3 space-y-2">
                 <Label htmlFor="first_name">First Name</Label>
