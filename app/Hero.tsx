@@ -38,7 +38,7 @@ const services = [
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div className="relative w-full py-8 lg:pt-16 overflow-clip bg-slate-200">
+    <div className="relative w-full py-8 lg:pt-16 overflow-clip bg-slate-50">
       <div className="absolute inset-0 ">
         <div className="container py-10">
           <Image
@@ -46,7 +46,7 @@ const Hero = () => {
             width={1920}
             height={1080}
             alt="Watermark"
-            className="w-[70%] lg:-translate-y-[170px] opacity-70  lg:translate-x-[530px] object-cover"
+            className="w-[70%] xl:-translate-y-[200px] lg:-translate-y-[170px] opacity-70  lg:translate-x-[530px] xl:translate-x-[400px] xl:w-[85%] object-cover"
           />
         </div>
       </div>
