@@ -58,7 +58,7 @@ export default function Brand() {
         <div className="flex flex-col items-center justify-start mt-12 space-y-6 md:mt-0 md:space-y-8 xl:space-y-10 ">
           <div className="flex flex-col items-start justify-start space-y-4">
             <h2 className="text-4xl font-bold text-gray-900">Our Mission</h2>
-            <p className="text-gray-700 text-md md:text-lg">
+            <p className="font-medium text-gray-700 text-md md:text-lg">
               Our mission is to assist our clients to optimize their compliance
               status and support them in adopting statutory requirements in the
               accounting and taxation regulatory landscape. We pride ourselves
@@ -69,7 +69,7 @@ export default function Brand() {
           </div>
           <div className="flex flex-col items-start justify-start space-y-4">
             <h2 className="text-4xl font-bold text-gray-900">Brand Promise</h2>
-            <p className="text-gray-700 text-md md:text-lg">
+            <p className="font-medium text-gray-700 text-md md:text-lg">
               Our brand promise is to understand and meet our clients&apos;
               needs. Our enduring strength is being a trusted brand that is
               capable of serving clients&apos; needs.
@@ -82,7 +82,7 @@ export default function Brand() {
             width={1920}
             height={1280}
             alt="Mission"
-            className="grayscale w-full object-cover md:aspect-[3/2] aspect-[4/3] "
+            className="object-cover object-left w-full rounded-full grayscale aspect-square "
           />
         </div>
       </div>

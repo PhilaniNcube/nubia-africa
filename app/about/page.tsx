@@ -72,9 +72,7 @@ const page = () => {
       </div> */}
       <Brand />
       <section className="w-full mt-6">
-        <h2 className="mt-4 mb-1 text-3xl font-extrabold uppercase">
-          Our Approach
-        </h2>
+        <h2 className="mb-3 text-4xl font-bold text-gray-900 ">Our Approach</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
           {approach.map((item, index) => (
             <div key={index} className="w-full">
@@ -94,7 +92,7 @@ const page = () => {
         </div>
       </section>
       <section className="w-full mt-10">
-        <h2 className="mt-4 mb-1 text-3xl font-extrabold uppercase">
+        <h2 className="mt-4 mb-3 text-4xl font-bold text-gray-900 ">
           Why Choose Us
         </h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
