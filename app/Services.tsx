@@ -65,7 +65,7 @@ const Services = () => {
         {services.map((service) => (
           <Card
             key={service.id}
-            className="w-full bg-slate-100 "
+            className="w-full bg-white rounded-none"
           >
             <CardHeader>
               <Image
@@ -73,13 +73,13 @@ const Services = () => {
                 width={1920}
                 height={1280}
                 alt={service.title}
-                className="object-cover w-full aspect-video"
+                className="object-cover w-full aspect-video grayscale"
               />
               <CardTitle>{service.title}</CardTitle>
             </CardHeader>
             <CardContent>
               {service.tags.map((tag, idx) => (
-                <CardDescription className="line-clamp-4" key={idx}>
+                <CardDescription className="line-clamp-4 text-slate-950" key={idx}>
                   {tag}
                 </CardDescription>
               ))}
@@ -87,8 +87,9 @@ const Services = () => {
             <CardFooter>
               <Link href={`/services/${service.href}`}>
                 <Button
+                  variant="outline"
                   type="button"
-                  className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800"
+                  className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
                 >
                   Read More
                 </Button>

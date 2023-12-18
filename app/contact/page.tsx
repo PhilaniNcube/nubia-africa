@@ -3,14 +3,16 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import { LucidePhone, MailCheckIcon, PhoneCallIcon, SmartphoneIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
     <main className="container py-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="w-full">
-          <h1 className="text-4xl font-bold uppercase sr-only  lg:text-6xl">
+          <h1 className="text-4xl font-bold uppercase sr-only lg:text-6xl">
             Contact Us
           </h1>
           {/* <Separator className="my-4" /> */}
@@ -24,6 +26,22 @@ const page = () => {
             <p className="mt-3 text-sm font-medium ">
               Contact us today for a free consultation!
             </p>
+            <div className="flex items-center my-2 space-x-3 font-medium">
+              <MailCheckIcon className="w-6 h-6" />
+              <Link href="mailto:hello@nubia.africa.com">
+                hello@nubia.africa.com
+              </Link>
+            </div>
+            <div className="flex items-center my-2 space-x-3 font-medium">
+              <PhoneCallIcon className="w-6 h-6" />
+              <Link href="tel:0027120040889">(012) 004 0889</Link>
+            </div>
+            <div className="flex items-center space-x-3 font-medium">
+              <SmartphoneIcon className="w-6 h-6" />
+              <Link href="https://wa.me/27120040889" target="_blank">
+                WhatsApp
+              </Link>
+            </div>
             <div className="w-full mt-6">
               <Image
                 src="/images/contact.png"
@@ -73,7 +91,7 @@ const page = () => {
             </div>
 
             <Button type="submit" className="w-1/2 mt-3 bg-black rounded-none">
-              Save
+              Send
             </Button>
           </form>
         </div>
