@@ -45,7 +45,7 @@ const Advisory = () => {
             <p className="text-white text-sm md:text-md font-medium mt-2">
               Investment decisions, particularly those involving significant
               financial activities, can have implications for an individual or
-              business's tax liabilities. Our tax advisory services also extend
+              business&apos;s tax liabilities. Our tax advisory services also extend
               to assisting clients
             </p>
 
