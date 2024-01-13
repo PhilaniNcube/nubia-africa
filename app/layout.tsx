@@ -1,17 +1,8 @@
 import './globals.css'
-import { Oswald, Roboto_Mono, Raleway } from "next/font/google";
+import {  Roboto_Mono, Raleway } from "next/font/google";
 import { Metadata} from 'next'
 import Navbar from '@/components/Layout/Navbar';
 
-
-
-
-export const oswald = Oswald({
-  subsets: ["latin"],
-  display: 'swap',
-  variable: '--font-oswald',
-  weight: ["200", "400", "600", "700"]
-});
 
 export const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
