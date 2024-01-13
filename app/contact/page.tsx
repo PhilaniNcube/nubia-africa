@@ -38,7 +38,7 @@ const page = () => {
             </div>
             <div className="flex items-center space-x-3 font-medium">
               <SmartphoneIcon className="w-6 h-6" />
-              <Link href="https://wa.me/27120040889" target="_blank">
+              <Link href="https://wa.me/27836431755" target="_blank">
                 WhatsApp
               </Link>
             </div>

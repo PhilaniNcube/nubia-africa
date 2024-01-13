@@ -63,7 +63,7 @@ const select = [
 
 const page = () => {
   return (
-    <div className="container py-10">
+    <div className="container py-10 lg:py-6">
       {/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
         <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-white font-extrabold uppercase">
           About Us
@@ -77,8 +77,8 @@ const page = () => {
         />
       </div> */}
 
-      <section className="w-full mt-6">
-        <h2 className="mb-3 text-4xl font-bold text-gray-900 ">Our Approach</h2>
+      <section className="w-full">
+        <h2 className="mb-3 text-2xl font-bold text-gray-900 ">Our Approach</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
           {approach.map((item, index) => (
             <div key={index} className="w-full">
@@ -98,7 +98,7 @@ const page = () => {
         </div>
       </section>
       <section className="w-full mt-10">
-        <h2 className="mt-4 mb-3 text-4xl font-bold text-gray-900 ">
+        <h2 className="mt-4 mb-3 text-2xl font-bold text-gray-900 ">
           Why Choose Us
         </h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-5">

@@ -1,14 +1,19 @@
-import { Button } from "@/components/ui/button";
+"use client"
+
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
+
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const services = [
   {
@@ -67,47 +72,54 @@ const services = [
   },
 ];
 
-const Services = () => {
-  return (
-    <section className="container py-10">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {services.map((service) => (
-          <Card
-            key={service.id}
-            className="w-full bg-white rounded-none"
-          >
-            <CardHeader>
-              <Image
-                src={service.image}
-                width={1920}
-                height={1280}
-                alt={service.title}
-                className="object-cover w-full aspect-video grayscale"
-              />
-              <CardTitle>{service.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              {service.tags.map((tag, idx) => (
-                <CardDescription className="line-clamp-4 text-slate-950" key={idx}>
-                  {tag}
-                </CardDescription>
-              ))}
-            </CardContent>
-            <CardFooter>
-              <Link href={`/services/${service.href}`}>
-                <Button
-                  variant="outline"
-                  type="button"
-                  className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
-                >
-                  Read More
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
-    </section>
+export function ServicesCarousel() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
-};
-export default Services;
+
+  return (
+    <Carousel
+      plugins={[plugin.current]}
+      className="container mx-auto relative pb-10"
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+    >
+      <CarouselContent className="">
+        {services.map((service, index) => (
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card className="border-none">
+                <CardHeader>
+                  <Image
+                    src={service.image}
+                    width={1920}
+                    height={1280}
+                    alt={service.title}
+                    className="object-cover w-full aspect-video grayscale"
+                  />
+                  <CardTitle>{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="">
+                  <span className="text-sm line-clamp-2">{service.tags}</span>
+                </CardContent>
+                <CardFooter>
+                  <Link href={`/services/${service.href}`}>
+                    <Button
+                      variant="outline"
+                      type="button"
+                      className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
+                    >
+                      Read More
+                    </Button>
+                  </Link>
+                </CardFooter>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
+}

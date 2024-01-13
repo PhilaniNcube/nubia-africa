@@ -15,7 +15,7 @@ const links = [
 
   {
     id: 2,
-    name: "Services",
+    name: "Our Services",
     href: "/services",
   },
   {
