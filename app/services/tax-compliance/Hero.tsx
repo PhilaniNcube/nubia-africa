@@ -7,10 +7,8 @@ const Hero = () => {
     <section className="container py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl lg:text-6xl font-bold uppercase">
-            Tax Compliance
-          </h1>
-          <p className="text-md md:text-lg leading-8 mt-4">
+          <h1 className="text-2xl font-bold uppercase">Tax Compliance</h1>
+          <p className="text-md mt-4">
             We assist businesses and individuals in meeting their tax compliance
             obligations. Our team helps clients understand and fulfil their tax
             filing requirements, including preparing and filing various tax
@@ -32,7 +30,7 @@ const Hero = () => {
             width={1280}
             height={853}
             alt="Bookkeeping"
-            className="grayscale w-full object-cover"
+            className="grayscale w-full object-cover aspect-[4/2]"
           />
         </div>
       </div>

@@ -7,10 +7,10 @@ const Hero = () => {
     <section className="container py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl lg:text-6xl font-bold uppercase">
+          <h1 className="text-2xl font-bold uppercase">
             Tax Planning
           </h1>
-          <p className="text-md md:text-lg leading-8 mt-4">
+          <p className="text-md mt-4">
             We provide strategic tax planning services to help businesses and
             individuals minimize tax liabilities and optimize their tax
             positions. Our team identifies tax-saving opportunities and develops
@@ -35,7 +35,7 @@ const Hero = () => {
             width={1280}
             height={853}
             alt="Bookkeeping"
-            className="grayscale w-full object-cover"
+            className="grayscale w-full object-cover aspect-[4/2]"
           />
         </div>
       </div>

@@ -14,10 +14,10 @@ const Compliance = () => {
                 width={954}
                 height={1280}
                 alt="Sky"
-                className="w-full object-cover"
+                className="w-full object-cover grayscale"
               />
             </div>
-            <div className="w-1/3 h-1/4 bottom-0 right-0 flex items-center p-3 bg-blue-600 absolute">
+            <div className="w-1/3 h-1/4 bottom-0 right-0 flex items-center p-3 bg-slate-600 absolute">
               <p className="text-xs md:text-md lg:text-lg font-semibold text-white">
                 We offer a full range of services
               </p>

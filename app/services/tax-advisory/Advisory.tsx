@@ -14,17 +14,16 @@ const Advisory = () => {
                 width={954}
                 height={1280}
                 alt="Sky"
-                className="w-full object-cover"
+                className="w-full object-cover grayscale"
               />
             </div>
-            <div className="w-1/3 h-1/4 bottom-0 right-0 flex items-center p-3 bg-blue-600 absolute">
+            <div className="w-1/3 h-1/4 bottom-0 right-0 flex items-center p-3 bg-slate-600 absolute">
               <p className="text-xs md:text-md lg:text-lg font-semibold text-white">
                 We offer a full range of services
               </p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center p-4">
-
             <p className="text-white text-sm md:text-md font-medium">
               Our tax advisory services are designed to provide individuals and
               businesses with expertise and guidance in navigating the
@@ -45,8 +44,8 @@ const Advisory = () => {
             <p className="text-white text-sm md:text-md font-medium mt-2">
               Investment decisions, particularly those involving significant
               financial activities, can have implications for an individual or
-              business&apos;s tax liabilities. Our tax advisory services also extend
-              to assisting clients
+              business&apos;s tax liabilities. Our tax advisory services also
+              extend to assisting clients
             </p>
 
             <Link href="/contact">

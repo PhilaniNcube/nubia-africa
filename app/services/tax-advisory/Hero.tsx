@@ -7,10 +7,10 @@ const Hero = () => {
     <section className="container py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl lg:text-6xl font-bold uppercase">
+          <h1 className="text-2xl font-bold uppercase">
             Tax Advisory Services
           </h1>
-          <p className="text-md md:text-lg leading-8 mt-4">
+          <p className="text-md mt-4">
             We offer advise on complex tax issues, such as international
             taxation, mergers and acquisitions, and other strategic financial
             decisions that have tax implications. We also advise on the tax
@@ -33,7 +33,7 @@ const Hero = () => {
             width={1280}
             height={853}
             alt="Bookkeeping"
-            className="grayscale w-full object-cover"
+            className="grayscale w-full object-cover aspect-[4/2]"
           />
         </div>
       </div>
