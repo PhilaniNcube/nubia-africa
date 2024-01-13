@@ -15,7 +15,7 @@ const Hero = () => {
             provide expert representation and guidance. Our experienced
             professionals provide effective representation and advocacy for our
             clients. We work closely with tax authorities to resolve
-            controversies, minimize penalties, and protect our clients&#39;
+            controversies, minimize penalties, and protect our clients&apos;
             rights, striving for fair and favourable outcomes in tax dispute
             resolutions.
           </p>

@@ -14,7 +14,7 @@ const Hero = () => {
             We provide strategic tax planning services to help businesses and
             individuals minimize tax liabilities and optimize their tax
             positions. Our team identifies tax-saving opportunities and develops
-            customized plans that align with our clients&#39; financial
+            customized plans that align with our clients&apos; financial
             objectives. Our team of tax experts stays up-to-date with the latest
             tax laws, regulations, and incentives to provide accurate and
             effective tax planning strategies. We conduct comprehensive tax

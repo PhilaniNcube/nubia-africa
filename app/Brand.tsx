@@ -31,9 +31,9 @@ export default function Brand() {
         <div className="flex flex-col items-start justify-start space-y-4">
           <h2 className="text-4xl font-bold text-gray-900">Brand Promise</h2>
           <p className="font-medium text-gray-700 text-md">
-            Our brand promise is to understand and meet our clients&#39; needs.
+            Our brand promise is to understand and meet our clients&apos; needs.
             Our enduring strength is being a trusted brand that is capable of
-            serving clients&#39; needs.
+            serving clients&apos; needs.
           </p>
         </div>
       </div>
