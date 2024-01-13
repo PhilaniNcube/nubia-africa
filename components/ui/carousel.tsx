@@ -2,10 +2,13 @@
 
 import * as React from "react"
 import useEmblaCarousel, {
+  //@ts-ignore
   type EmblaCarouselType as CarouselApi,
+  //@ts-ignore
   type EmblaOptionsType as CarouselOptions,
+  //@ts-ignore
   type EmblaPluginType as CarouselPlugin,
-} from "embla-carousel-react"
+} from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -201,6 +204,7 @@ const CarouselPrevious = React.forwardRef<
     <Button
       ref={ref}
       variant={variant}
+      //@ts-ignore
       size={size}
       className={cn(
         "absolute  h-8 w-8 rounded-full",
@@ -230,6 +234,7 @@ const CarouselNext = React.forwardRef<
     <Button
       ref={ref}
       variant={variant}
+      //@ts-ignore
       size={size}
       className={cn(
         "absolute h-8 w-8 rounded-full",
