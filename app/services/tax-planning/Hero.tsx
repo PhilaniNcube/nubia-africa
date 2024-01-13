@@ -10,8 +10,15 @@ const Hero = () => {
           <h1 className="text-4xl lg:text-6xl font-bold uppercase">
             Tax Planning
           </h1>
-          <p className="text-md md:text-lg leading-8 max-w-[35ch] mt-4">
-            Tax Planning Services for Businesses and Individuals
+          <p className="text-md md:text-lg leading-8 mt-4">
+            We provide strategic tax planning services to help businesses and
+            individuals minimize tax liabilities and optimize their tax
+            positions. Our team identifies tax-saving opportunities and develops
+            customized plans that align with our clients&#39; financial
+            objectives. Our team of tax experts stays up-to-date with the latest
+            tax laws, regulations, and incentives to provide accurate and
+            effective tax planning strategies. We conduct comprehensive tax
+            reviews to identify potential tax-saving opportunities
           </p>
           <Link href="/contact">
             <Button
@@ -28,6 +35,7 @@ const Hero = () => {
             width={1280}
             height={853}
             alt="Bookkeeping"
+            className="grayscale w-full object-cover"
           />
         </div>
       </div>

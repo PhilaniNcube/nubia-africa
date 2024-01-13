@@ -48,12 +48,21 @@ const services = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Tax Dispute Resolution",
     href: "tax-dispute-resolution",
     image: "/images/docs.jpg",
     tags: [
       "In the event of tax disputes or audits, our experienced tax advisors provide expert representation and guidance. Our experienced professionals provide effective representation and advocacy for our clients. We work closely with tax authorities to resolve controversies, minimize penalties, and protect our clients' rights, striving for fair and favourable outcomes in tax dispute resolutions.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Tax Advisory Services",
+    href: "tax-advisory",
+    image: "/images/advisory.png",
+    tags: [
+      "We offer advise on complex tax issues, such as international taxation, mergers and acquisitions, and other strategic financial decisions that have tax implications. We also advise on the tax implications of various investment decisions, including the purchase or sale of assets, investments in securities, and other financial activities.",
     ],
   },
 ];

@@ -10,8 +10,12 @@ const Hero = () => {
           <h1 className="text-4xl lg:text-6xl font-bold uppercase">
             Tax Compliance
           </h1>
-          <p className="text-md md:text-lg leading-8 max-w-[35ch] mt-4">
-            Peace of mind knowing that your tax filings are in safe hands
+          <p className="text-md md:text-lg leading-8 mt-4">
+            We assist businesses and individuals in meeting their tax compliance
+            obligations. Our team helps clients understand and fulfil their tax
+            filing requirements, including preparing and filing various tax
+            forms, such as income tax returns, VAT returns, payroll tax returns,
+            and more.
           </p>
           <Link href="/contact">
             <Button
@@ -28,6 +32,7 @@ const Hero = () => {
             width={1280}
             height={853}
             alt="Bookkeeping"
+            className="grayscale w-full object-cover"
           />
         </div>
       </div>

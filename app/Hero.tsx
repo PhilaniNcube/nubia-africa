@@ -46,22 +46,28 @@ const Hero = () => {
             width={1920}
             height={1080}
             alt="Watermark"
-            className="w-[70%] xl:-translate-y-[200px] lg:-translate-y-[170px] opacity-70  lg:translate-x-[530px] xl:translate-x-[400px] xl:w-[85%] object-cover"
+            className="w-[400px] xl:-translate-y-[230px] lg:-translate-y-[170px] opacity-70  lg:translate-x-[530px] xl:translate-x-[450px] xl:w-[85%] scale-75 object-cover"
           />
         </div>
       </div>
       <section className="container relative h-[80vh] py-6 rounded-md shadow-md bg-white/80 overflow-clip">
         <div className="flex flex-col h-full gap-4 md:flex-row">
           <div className="flex flex-col items-start justify-center w-full h-full text-black lg:-translate-y-8">
-            <h1 className="hidden text-3xl font-bold md:text-5xl lg:text-6xl">
+            <h1 className=" text-3xl font-bold md:text-5xl lg:text-6xl">
               Your partner in tax compliance
             </h1>
-
-            <Link href="/contact" className="hidden">
-              <Button className="mt-3 text-xs tracking-wider uppercase bg-black rounded-none md:text-md font-raleway w-fit">
-                Get a free consultation today!
-              </Button>
-            </Link>
+            <div className="flex items-center gap-x-2">
+              <Link href="/contact" className="">
+                <Button className="mt-3 text-xs tracking-wider uppercase bg-black rounded-none md:text-md font-raleway w-fit">
+                  Get in touch today!
+                </Button>
+              </Link>
+              <Link href="/services" className="">
+                <Button className="mt-3 text-xs tracking-wider uppercase bg-white hover:text-white hover:bg-black border border-black text-black rounded-none md:text-md font-raleway w-fit">
+                  Services
+                </Button>
+              </Link>
+            </div>
           </div>{" "}
           <div className="items-center justify-end hidden w-full px-10 lg:flex overflow-clip">
             <Image
@@ -69,7 +75,7 @@ const Hero = () => {
               height="1024"
               src="/images/Africa.webp"
               alt="people"
-              className="object-cover w-full scale-90 grayscale aspect-square"
+              className="object-cover w-full lg:scale-90 grayscale aspect-square"
             />
           </div>
         </div>

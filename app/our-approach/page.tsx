@@ -30,28 +30,34 @@ const approach = [
 
 const select = [
   {
-    title: "Personalized",
+    title: "Expertise",
+    description:
+      "Our team consists of highly qualified tax professionals with extensive knowledge and experience in various tax disciplines.",
+    image: "/images/reliable.jpg",
+  },
+  {
+    title: "Personalized Approach",
     description:
       "We understand that each client has unique tax needs and goals, so we provide tailored solutions and one-on-one attention.",
     image: "/images/personal.jpg",
   },
   {
-    title: "Reliability",
+    title: "Accuracy and Compliance",
     description:
-      "We are committed to providing you with timely and accurate financial information. We understand that your business depends on it, and we won't let you down.",
-    image: "/images/reliable.jpg",
+      "We adhere to the highest standards of accuracy and compliance, ensuring that our clients meet their tax obligations while optimizing their tax positions.",
+    image: "/images/docs.jpg",
   },
   {
     title: "Proactive Guidance",
     description:
       "We keep a close eye on tax developments and proactively advise our clients on tax law changes and opportunities that may affect them.",
-    image: "/images/docs.jpg",
+    image: "/images/locked.jpg",
   },
   {
     title: "Confidentiality and Integrity",
     description:
       "We handle all client information with the utmost confidentiality and maintain the highest ethical standards in our operations.",
-    image: "/images/locked.jpg",
+    image: "/images/secret.jpg",
   },
 ];
 
@@ -70,7 +76,7 @@ const page = () => {
           alt="image"
         />
       </div> */}
-      <Brand />
+
       <section className="w-full mt-6">
         <h2 className="mb-3 text-4xl font-bold text-gray-900 ">Our Approach</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
@@ -95,7 +101,7 @@ const page = () => {
         <h2 className="mt-4 mb-3 text-4xl font-bold text-gray-900 ">
           Why Choose Us
         </h2>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-5">
           {select.map((item, index) => (
             <div className="w-full" key={index}>
               <Image

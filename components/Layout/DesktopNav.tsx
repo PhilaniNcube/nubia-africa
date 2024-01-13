@@ -11,15 +11,16 @@ const links = [
     name: "Home",
     href: "/",
   },
+
   {
     id: 2,
-    name: "About",
-    href: "/about",
+    name: "Services",
+    href: "/services",
   },
   {
     id: 3,
-    name: "Services",
-    href: "/services",
+    name: "Our Approach",
+    href: "/our-approach",
   },
   {
     id: 4,

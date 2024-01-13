@@ -5,9 +5,9 @@ import Brand from './Brand'
 
 export default function Home() {
   return (
-    <>
+    <main>
      <Hero />
-     {/* <Brand /> */}
-    </>
+     <Brand />
+    </main>
   )
 }

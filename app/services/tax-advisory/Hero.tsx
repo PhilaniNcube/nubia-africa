@@ -8,16 +8,15 @@ const Hero = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl lg:text-6xl font-bold uppercase">
-            Tax Controversy Resolution:
+            Tax Advisory Services
           </h1>
           <p className="text-md md:text-lg leading-8 mt-4">
-            In the event of tax disputes or audits, our experienced tax advisors
-            provide expert representation and guidance. Our experienced
-            professionals provide effective representation and advocacy for our
-            clients. We work closely with tax authorities to resolve
-            controversies, minimize penalties, and protect our clients&#39;
-            rights, striving for fair and favourable outcomes in tax dispute
-            resolutions.
+            We offer advise on complex tax issues, such as international
+            taxation, mergers and acquisitions, and other strategic financial
+            decisions that have tax implications. We also advise on the tax
+            implications of various investment decisions, including the purchase
+            or sale of assets, investments in securities, and other financial
+            activities.
           </p>
           <Link href="/contact">
             <Button
@@ -30,7 +29,7 @@ const Hero = () => {
         </div>
         <div className="w-full">
           <Image
-            src="/images/tax.webp"
+            src="/images/advisory.png"
             width={1280}
             height={853}
             alt="Bookkeeping"

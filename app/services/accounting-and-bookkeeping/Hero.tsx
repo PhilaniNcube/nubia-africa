@@ -10,8 +10,11 @@ const Hero = () => {
           <h1 className="text-4xl lg:text-6xl font-bold uppercase">
             Accounting and Bookkeeping
           </h1>
-          <p className="text-md md:text-lg leading-8 max-w-[35ch] mt-4">
-            Accounting and Bookkeeping Services for Businesses of All Sizes
+          <p className="text-md md:text-lg leading-8 mt-4">
+            We offer a full range of accounting and bookkeeping services,
+            including financial statement preparation, general ledger
+            maintenance, accounts payable and receivable management, payroll
+            processing, and bank reconciliation.
           </p>
           <Link href="/contact">
             <Button
@@ -28,6 +31,7 @@ const Hero = () => {
             width={1920}
             height={1131}
             alt="Bookkeeping"
+            className="grayscale w-full object-cover"
           />
         </div>
       </div>
