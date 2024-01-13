@@ -3,7 +3,8 @@ import Image from "next/image"
 import Link from "next/link";
 import {motion} from "framer-motion"
 import { usePathname } from "next/navigation";
-import { raleway } from "@/app/layout";
+import { raleway } from "@/fonts";
+
 
 const links = [
   {

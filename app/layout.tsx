@@ -1,22 +1,10 @@
 import './globals.css'
-import {  Roboto_Mono, Raleway } from "next/font/google";
+
 import { Metadata} from 'next'
 import Navbar from '@/components/Layout/Navbar';
+import { raleway } from '@/fonts';
 
 
-export const roboto_mono = Roboto_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-roboto-mono",
-  weight: ["400", "500","600", "700"],
-});
-
-export const raleway = Raleway({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-raleway",
-  weight: ["400", "500","600", "700"],
-});
 
 
 
