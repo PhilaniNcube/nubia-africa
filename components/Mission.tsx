@@ -14,7 +14,7 @@ const Mission = () => {
       <p
         className={cn(
           "font-medium text-gray-700 text-sm lg:text-md transition-all duration-300",
-          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-1 max-h-4"
+          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-1"
         )}
       >
         Our mission is to assist our clients to optimize their compliance status

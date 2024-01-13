@@ -14,7 +14,7 @@ const Promise = () => {
       <p
         className={cn(
           "font-medium text-gray-700 text-sm transition-all duration-300 lg:text-md ",
-          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-1 max-h-4"
+          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-1"
         )}
       >
         Our brand promise is to understand and meet our clients&apos; needs. Our
