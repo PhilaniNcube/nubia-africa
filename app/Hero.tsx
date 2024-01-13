@@ -33,7 +33,7 @@ const Hero = () => {
       <section className="container relative h-[80vh] py-6 rounded-md shadow-md bg-white/80 overflow-clip">
         <div className="flex flex-col h-full gap-4 md:flex-row">
           <div className="flex flex-col items-start justify-center w-full h-full text-black lg:-translate-y-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 gap-3">
               <About />
               <Mission />
               <Promise />
