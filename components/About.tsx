@@ -14,7 +14,7 @@ const About = () => {
       <p
         className={cn(
           "font-medium text-gray-700 text-sm transition-all duration-300 lg:text-md",
-          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-1"
+          isOpen ? "line-clamp-none max-h-fit" : "line-clamp-2"
         )}
       >
         Nubia Associates is an accounting and tax advisory firm specializing in
