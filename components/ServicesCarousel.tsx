@@ -86,9 +86,10 @@ export function ServicesCarousel() {
     >
       <CarouselContent className="w-full">
         {services.map((service, index) => (
-          <CarouselItem key={index} className="w-full">
+          <CarouselItem key={index} className="w-full md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
-              <Card className="border-none">
+              <Card className="border-none bg-transparent">
+
                 <Image
                   src={service.image}
                   width={1920}
@@ -97,7 +98,7 @@ export function ServicesCarousel() {
                   className="object-cover w-full aspect-video grayscale"
                 />
                 <CardTitle className="py-2">{service.title}</CardTitle>
-                <span className="text-sm line-clamp-2 mb-2">
+                <span className="text-sm text-black font-medium line-clamp-2 mb-2">
                   {service.tags}
                 </span>
                 <Link href={`/services/${service.href}`} className="">
@@ -110,7 +111,7 @@ export function ServicesCarousel() {
                   </Button>
                 </Link>
                 <CardContent className="mt-2"></CardContent>
-                <CardFooter></CardFooter>
+
               </Card>
             </div>
           </CarouselItem>
