@@ -15,7 +15,7 @@ export default function Home() {
             height="1024"
             src="/images/Africa.webp"
             alt="people"
-            className="object-cover w-full lg:scale-50 grayscale"
+            className="object-cover w-full lg:scale-[60%] grayscale"
           />
         </div>
         <HomepageHero />

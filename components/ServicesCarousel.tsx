@@ -80,7 +80,7 @@ export function ServicesCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="container mx-auto relative pb-10"
+      className=" mx-auto relative pt-6"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
