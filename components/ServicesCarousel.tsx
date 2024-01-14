@@ -84,35 +84,33 @@ export function ServicesCarousel() {
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent className="">
+      <CarouselContent className="w-full">
         {services.map((service, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="w-full">
             <div className="p-1">
               <Card className="border-none">
-                <CardHeader>
-                  <Image
-                    src={service.image}
-                    width={1920}
-                    height={1280}
-                    alt={service.title}
-                    className="object-cover w-full aspect-video grayscale"
-                  />
-                  <CardTitle>{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="">
-                  <span className="text-sm line-clamp-2">{service.tags}</span>
-                </CardContent>
-                <CardFooter>
-                  <Link href={`/services/${service.href}`}>
-                    <Button
-                      variant="outline"
-                      type="button"
-                      className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
-                    >
-                      Read More
-                    </Button>
-                  </Link>
-                </CardFooter>
+                <Image
+                  src={service.image}
+                  width={1920}
+                  height={1280}
+                  alt={service.title}
+                  className="object-cover w-full aspect-video grayscale"
+                />
+                <CardTitle className="py-2">{service.title}</CardTitle>
+                <span className="text-sm line-clamp-2 mb-2">
+                  {service.tags}
+                </span>
+                <Link href={`/services/${service.href}`} className="">
+                  <Button
+                    variant="outline"
+                    type="button"
+                    className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
+                  >
+                    Read More
+                  </Button>
+                </Link>
+                <CardContent className="mt-2"></CardContent>
+                <CardFooter></CardFooter>
               </Card>
             </div>
           </CarouselItem>

@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export default function Brand() {
   return (
-    <div className="container mt-20">
+    <div className="container py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
-        <div className="flex flex-col items-start justify-start space-y-4">
-          <h2 className="text-4xl font-bold text-gray-900">About Us</h2>
+        <div className="flex flex-col items-start justify-start ">
+          <h2 className="text-2xl font-bold text-gray-900">About Us</h2>
           <p className="font-medium text-gray-700 text-md">
             Nubia Associates is an accounting and tax advisory firm specializing
             in providing comprehensive accounting and tax services to
@@ -17,8 +17,8 @@ export default function Brand() {
             tax savings opportunities.
           </p>
         </div>
-        <div className="flex flex-col items-start justify-start space-y-4">
-          <h2 className="text-4xl font-bold text-gray-900">Mission</h2>
+        <div className="flex flex-col items-start justify-start ">
+          <h2 className="text-2xl font-bold text-gray-900">Mission</h2>
           <p className="font-medium text-gray-700 text-md">
             Our mission is to assist our clients to optimize their compliance
             status and support them in adopting statutory requirements in the
@@ -28,8 +28,8 @@ export default function Brand() {
             and confidentiality.
           </p>
         </div>
-        <div className="flex flex-col items-start justify-start space-y-4">
-          <h2 className="text-4xl font-bold text-gray-900">Brand Promise</h2>
+        <div className="flex flex-col items-start justify-start ">
+          <h2 className="text-2xl font-bold text-gray-900">Brand Promise</h2>
           <p className="font-medium text-gray-700 text-md">
             Our brand promise is to understand and meet our clients&apos; needs.
             Our enduring strength is being a trusted brand that is capable of
@@ -37,7 +37,6 @@ export default function Brand() {
           </p>
         </div>
       </div>
-
     </div>
   );
 }
