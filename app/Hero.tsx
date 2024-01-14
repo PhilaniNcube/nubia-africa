@@ -31,7 +31,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <section className="container relative h-[50vh] lg:h-[65vh] py-6 rounded-md shadow-md bg-white/80 overflow-clip">
+      <section className="container relative h-[50vh] lg:h-[68vh] py-6 rounded-md shadow-md bg-white/80 overflow-clip">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
           <div className="flex flex-col items-start justify-center w-full h-full text-black px-2 lg:px-10">
             <ServicesCarousel />
