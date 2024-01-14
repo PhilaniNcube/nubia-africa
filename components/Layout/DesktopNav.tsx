@@ -38,21 +38,20 @@ const DesktopNav = () => {
   return (
     <div className={raleway.className}>
       <div className="justify-between hidden bg-white md:flex">
-        <Link href="/">
+        <Link href="/" className="relative flex">
           <Image
-
             src="/images/logo-cropped.svg"
             width={328.82}
             height={323.15}
             alt="Logo"
-            className="object-cover w-16"
+            className="object-cover w-20 relative mix-blend-normal"
           />
+
         </Link>
 
         <ul className="flex items-center space-x-3 ">
           {links.map((link) => (
             <Link
-
               key={link.id}
               href={link.href}
               className={`${
