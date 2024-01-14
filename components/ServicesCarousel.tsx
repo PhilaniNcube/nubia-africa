@@ -80,7 +80,7 @@ export function ServicesCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className=" mx-auto relative pt-6"
+      className=" mx-auto relative pt-10"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -105,7 +105,7 @@ export function ServicesCarousel() {
                   <Button
                     variant="outline"
                     type="button"
-                    className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
+                    className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white mt-4"
                   >
                     Read More
                   </Button>
