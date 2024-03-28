@@ -4,7 +4,7 @@ import Planning from "./Planning";
 const page = () => {
   return <main>
     <Hero />
-    <Planning />
+    {/* <Planning /> */}
   </main>;
 };
 export default page;

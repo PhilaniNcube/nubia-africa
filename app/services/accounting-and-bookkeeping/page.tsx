@@ -8,7 +8,7 @@ const page = () => {
   return (
     <main>
       <Hero />
-      <Bookkeeping />
+      {/* <Bookkeeping /> */}
     </main>
   );
 };

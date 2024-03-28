@@ -78,47 +78,50 @@ export function ServicesCarousel() {
   );
 
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className=" mx-auto relative pt-10"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent className="w-full">
-        {services.map((service, index) => (
-          <CarouselItem key={index} className="w-full md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card className="border-none bg-transparent">
+			<Carousel
+				plugins={[plugin.current]}
+				className="relative pt-10 mx-auto "
+				onMouseEnter={plugin.current.stop}
+				onMouseLeave={plugin.current.reset}
+			>
+				<CarouselContent className="w-full">
+					{services.map((service, index) => (
+						<CarouselItem
+							key={service.id}
+							className="w-full md:basis-1/2 lg:basis-1/3"
+						>
+							<div className="p-1">
+								<Card className="bg-transparent border-none">
+									<div className="bg-slate-400">
+										<Image
+											src={service.image}
+											width={1920}
+											height={1280}
+											alt={service.title}
+											className="object-cover w-full aspect-video grayscale mix-blend-multiply"
+										/>
+									</div>
+									<CardTitle className="py-2">{service.title}</CardTitle>
+									<span className="mb-2 text-sm font-medium text-black line-clamp-2">
+										{service.tags}
+									</span>
+									<Link href={`/services/${service.href}`} className="">
+										<Button
+											variant="outline"
+											type="button"
+											className="px-4 py-2 mt-4 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
+										>
+											Read More
+										</Button>
+									</Link>
 
-                <Image
-                  src={service.image}
-                  width={1920}
-                  height={1280}
-                  alt={service.title}
-                  className="object-cover w-full aspect-video grayscale"
-                />
-                <CardTitle className="py-2">{service.title}</CardTitle>
-                <span className="text-sm text-black font-medium line-clamp-2 mb-2">
-                  {service.tags}
-                </span>
-                <Link href={`/services/${service.href}`} className="">
-                  <Button
-                    variant="outline"
-                    type="button"
-                    className="px-4 py-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white mt-4"
-                  >
-                    Read More
-                  </Button>
-                </Link>
-                <CardContent className="mt-2"></CardContent>
-
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-  );
+								</Card>
+							</div>
+						</CarouselItem>
+					))}
+				</CarouselContent>
+				<CarouselPrevious />
+				<CarouselNext />
+			</Carousel>
+		);
 }

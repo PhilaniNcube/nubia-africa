@@ -6,7 +6,7 @@ const page = () => {
   return (
     <main>
       <Hero />
-      <Advisory />
+      {/* <Advisory /> */}
     </main>
   );
 };

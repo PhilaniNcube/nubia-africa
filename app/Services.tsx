@@ -88,7 +88,7 @@ const Services = () => {
             </CardHeader>
             <CardContent>
               {service.tags.map((tag, idx) => (
-                <CardDescription className="line-clamp-4 text-slate-950" key={idx}>
+                <CardDescription className="line-clamp-4 text-slate-950" key={tag}>
                   {tag}
                 </CardDescription>
               ))}

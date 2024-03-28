@@ -4,7 +4,7 @@ import Hero from "./Hero";
 const page = () => {
   return <main>
     <Hero />
-    <Compliance />
+    {/* <Compliance /> */}
   </main>;
 };
 export default page;

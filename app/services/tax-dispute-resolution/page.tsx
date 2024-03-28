@@ -4,7 +4,7 @@ import Resolution from "./Resolution";
 const page = () => {
   return <main>
     <Hero />
-    <Resolution />
+    {/* <Resolution /> */}
   </main>;
 };
 export default page;
