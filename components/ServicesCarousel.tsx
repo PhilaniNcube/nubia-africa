@@ -92,7 +92,7 @@ export function ServicesCarousel() {
 						>
 							<div className="p-1">
 								<Card className="bg-transparent border-none">
-									<div className="bg-slate-400">
+									<div className="bg-black/75">
 										<Image
 											src={service.image}
 											width={1920}
