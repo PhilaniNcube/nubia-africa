@@ -5,8 +5,8 @@ export default function Brand() {
 			<div className="container text-black">
 				<div className="grid grid-cols-1 gap-6 pb-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 lg:pb-20">
 					<div className="flex flex-col items-start justify-start ">
-						<h2 className="mb-3 text-xl font-semibold text-gray-900 ">About Us</h2>
-						<p className="text-sm font-medium text-gray-900">
+						<h2 className="mb-3 text-xl font-semibold text-black ">About Us</h2>
+						<p className="text-sm font-medium text-black">
 							Nubia Associates is a Level-1 Contributor to the B-BBEE Scorecard.
 							A black female- owned professional services company, Nubia
 							Associates provides integrated accounting and tax services. With a
@@ -19,8 +19,8 @@ export default function Brand() {
 						</p>
 					</div>
 					<div className="flex flex-col items-start justify-start ">
-						<h2 className="mb-3 text-xl font-semibold text-gray-900">Mission</h2>
-						<p className="text-sm font-medium text-gray-900">
+						<h2 className="mb-3 text-xl font-semibold text-black">Mission</h2>
+						<p className="text-sm font-medium text-black">
 							Our mission is to assist our clients to optimize their compliance
 							status and support them in adopting statutory requirements in the
 							accounting and taxation regulatory landscape. We pride ourselves
@@ -30,10 +30,10 @@ export default function Brand() {
 						</p>
 					</div>
 					<div className="flex flex-col items-start justify-start ">
-						<h2 className="mb-3 text-xl font-semibold text-gray-900">
+						<h2 className="mb-3 text-xl font-semibold text-black">
 							Brand Promise
 						</h2>
-						<p className="text-sm font-medium text-gray-900">
+						<p className="text-sm font-medium text-black">
 							Our brand promise is to understand and meet our clients&apos;
 							needs. Our enduring strength is being a trusted brand that is
 							capable of serving clients&apos; needs.
