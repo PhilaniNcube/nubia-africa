@@ -101,7 +101,7 @@ export function ServicesCarousel() {
 											className="object-cover w-full aspect-video grayscale mix-blend-multiply"
 										/>
 									</div>
-									<CardTitle className="py-2">{service.title}</CardTitle>
+									<CardTitle className="py-2 text-xl font-semibold">{service.title}</CardTitle>
 									<span className="mb-2 text-sm font-medium text-black line-clamp-2">
 										{service.tags}
 									</span>
