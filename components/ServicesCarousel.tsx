@@ -109,7 +109,7 @@ export function ServicesCarousel() {
 										<Button
 											variant="outline"
 											type="button"
-											className="px-4 py-2 mt-4 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
+											className="px-4 py-2 mt-2 font-bold text-white bg-black rounded-none hover:bg-slate-800 hover:text-white"
 										>
 											Read More
 										</Button>
