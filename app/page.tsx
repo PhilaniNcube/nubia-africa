@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <div className="relative isolate">
-        <div className="absolute inset-0 items-center justify-center w-full px-10 py-20 lg-py-32 opacity-30 flex  overflow-clip">
+        <div className="absolute inset-0 flex items-center justify-center w-full px-10 py-20 lg-py-32 opacity-30 overflow-clip">
           <Image
             width="1024"
             height="1024"
@@ -19,7 +19,7 @@ export default function Home() {
           />
         </div>
         <HomepageHero />
-        <div className="relative">
+        <div className="relative mt-10">
          <Brand />
         </div>
       </div>
