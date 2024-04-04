@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-			<section className="container py-10">
+			<section className="container min-h-[calc(100vh-120px)] py-10">
 				<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 					<div className="flex flex-col justify-center">
 						<h1 className="text-2xl font-bold uppercase">Tax Preparation</h1>
@@ -21,10 +21,10 @@ const Hero = () => {
 							official announcements, updates from tax authorities, and guidance
 							from professional associations or advisors. This ensures timely
 							awareness of changes that may impact your tax obligations or
-							opportunities. Evaluate the implications of regulatory amendments
-							on your tax situation. Determine how the changes affect your
-							income, deductions, credits, tax rates, compliance requirements,
-							and overall tax liabilities.
+							opportunities. We evaluate the implications of regulatory
+							amendments on your tax situation and determine how the changes
+							affect your income, deductions, credits, tax rates, compliance
+							requirements, and overall tax liabilities.
 						</p>
 						<Link href="/contact">
 							<Button

@@ -4,15 +4,14 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-			<section className="container py-10">
+			<section className="container min-h-[calc(100vh-120px)] py-10">
 				<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 					<div className="flex flex-col justify-center">
 						<h1 className="text-2xl font-bold uppercase">Tax Compliance</h1>
 						<p className="mt-4 text-md">
 							We assist businesses and individuals in meeting their tax
-							compliance obligations. Our team helps clients understand and
-							fulfil their tax filing requirements, including preparing and
-							filing various returns.
+							compliance obligations by fulfil their tax filing requirements,
+							including registration, preparation and filing various returns.
 						</p>
 						<ul className="mt-4 list-disc text-md">
 							<li>
