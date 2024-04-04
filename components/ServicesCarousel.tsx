@@ -86,7 +86,7 @@ export function ServicesCarousel() {
         opts={{loop:true}}
 				className="relative pt-10 mx-auto "
 				onMouseEnter={plugin.current.stop}
-				onMouseLeave={plugin.current.reset}
+				onMouseLeave={plugin.current.start}
 			>
 				<CarouselContent className="w-full">
 					{services.map((service, index) => (
