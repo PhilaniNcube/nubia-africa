@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react";
-import Autoplay from "embla-carousel-autoplay";
+import Autoplay, { type AutoplayType } from "embla-carousel-autoplay";
 import type { EmblaOptionsType } from "embla-carousel";
 
 
@@ -76,8 +76,8 @@ const services = [
 
 export function ServicesCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true})
-  );
+			Autoplay({ delay: 2000, stopOnInteraction: true }),
+		);
 
   return (
 			<Carousel
@@ -86,7 +86,7 @@ export function ServicesCarousel() {
         opts={{loop:true}}
 				className="relative pt-10 mx-auto "
 				onMouseEnter={plugin.current.stop}
-				onMouseLeave={plugin.current.start}
+				onMouseLeave={plugin.current.reset}
 			>
 				<CarouselContent className="w-full">
 					{services.map((service, index) => (
