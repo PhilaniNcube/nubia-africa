@@ -76,7 +76,7 @@ const services = [
 
 export function ServicesCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true, loop:true })
+    Autoplay({ delay: 2000, stopOnInteraction: true})
   );
 
   return (
