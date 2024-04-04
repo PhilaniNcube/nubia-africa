@@ -30,7 +30,7 @@ export default function Brand() {
 							laws and to be a trusted partner in our clients&#39; financial
 							success.
 						</p>
-						<div className="flex items-center space-x-3 text-sm">
+						<div className="flex items-center mt-3 space-x-3 text-sm">
 							{collapsed ? (
 								<span
 									className="flex items-center space-x-3 text-sm"
@@ -89,7 +89,7 @@ export default function Brand() {
 							)}
 						</div>
 					</div>
-					<div className="flex flex-col items-start justify-start mt-3 ">
+					<div className="flex flex-col items-start justify-start ">
 						<h2 className="mb-3 text-xl font-semibold text-black">
 							Brand Promise
 						</h2>
