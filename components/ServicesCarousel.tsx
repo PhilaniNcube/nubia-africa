@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import type { EmblaOptionsType } from "embla-carousel";
+
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -74,12 +76,14 @@ const services = [
 
 export function ServicesCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true, loop:true })
   );
 
   return (
 			<Carousel
+
 				plugins={[plugin.current]}
+        opts={{loop:true}}
 				className="relative pt-10 mx-auto "
 				onMouseEnter={plugin.current.stop}
 				onMouseLeave={plugin.current.reset}
