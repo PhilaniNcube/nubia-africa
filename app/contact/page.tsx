@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className="container py-10">
+    <main className="container min-h-[calc(100vh-120px)] py-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="w-full">
           <h1 className="text-4xl font-bold uppercase sr-only lg:text-6xl">
