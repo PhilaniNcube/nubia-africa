@@ -1,13 +1,25 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
-import { LucidePhone, MailCheckIcon, PhoneCallIcon, SmartphoneIcon } from "lucide-react";
+import { sendEmailAction } from "@/lib/actions";
+import {
+  Loader,
+  LucidePhone,
+  MailCheckIcon,
+  PhoneCallIcon,
+  SmartphoneIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useActionState } from "react";
 
 const page = () => {
+  const [state, formAction, isPending] = useActionState(sendEmailAction, null);
+
   return (
     <main className="container min-h-[calc(100vh-120px)] py-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -54,7 +66,12 @@ const page = () => {
           </div>
         </div>
         <div className="w-full">
-          <form className="w-full">
+          <form
+            action={(formData) => {
+              formAction(formData);
+            }}
+            className="w-full"
+          >
             <div className="flex gap-4 ">
               <div className="flex flex-col w-full my-3 space-y-2">
                 <Label htmlFor="first_name">First Name</Label>
@@ -90,10 +107,19 @@ const page = () => {
               <Textarea id="message" name="message" rows={3} />
             </div>
 
-            <Button type="submit" className="w-1/2 mt-3 bg-black rounded-none">
-              Send
+            <Button
+              type="submit"
+              disabled={isPending}
+              className="w-1/2 mt-3 bg-black rounded-none"
+            >
+              {isPending ? "Sending..." : "Send"}
             </Button>
           </form>
+
+          {state?.error && <p className="mt-3 text-red-500">{state.error}</p>}
+          {state?.success && (
+            <p className="mt-3 text-green-500">{state.success}</p>
+          )}
         </div>
       </div>
     </main>

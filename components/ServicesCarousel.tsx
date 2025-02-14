@@ -91,7 +91,7 @@ export function ServicesCarousel() {
 				<CarouselContent className="w-full">
 					{services.map((service, index) => (
 						<CarouselItem
-							key={service.id}
+							key={service.href}
 							className="w-full md:basis-1/2 lg:basis-1/3"
 						>
 							<div className="p-1">
