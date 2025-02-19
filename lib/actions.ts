@@ -20,6 +20,7 @@ export async function sendEmailAction(prevState:unknown, formData:FormData) {
       const {data, error} = await resend.emails.send({
         to: 'hello@nubia.africa.com',
         from: 'info@nubia.africa.com',
+        cc:'ncbphi001@gmail.com',
         subject: 'New Contact Form Submission',
         text: `First Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       }) 
