@@ -44,7 +44,7 @@ const DesktopNav = () => {
             width={328.82}
             height={323.15}
             alt="Logo"
-            className="object-cover w-20 relative mix-blend-normal"
+            className="relative object-cover w-20 mix-blend-normal"
           />
 
         </Link>
@@ -61,9 +61,9 @@ const DesktopNav = () => {
               {pathname === link.href && (
                 <motion.div
                   layoutId="active-pill"
-                  className="absolute inset-0 bg-black"
-                  // transition={{ duration: 3 }}
-                  style={{ borderRadius: 9999 }}
+                  // className="absolute inset-0 bg-black"
+                  initial={false} 
+                  style={{ borderRadius: 9999, inset: 0, position: "absolute", backgroundColor: "black" }}
                 />
               )}
 
