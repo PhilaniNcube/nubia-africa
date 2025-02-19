@@ -2,21 +2,21 @@
 
 import * as React from "react"
 import useEmblaCarousel, {
-  //@ts-ignore
-  type EmblaCarouselType as CarouselApi,
-  //@ts-ignore
-  type EmblaOptionsType as CarouselOptions,
-  //@ts-ignore
-  type EmblaPluginType as CarouselPlugin,
-} from "embla-carousel-react";
+  type UseEmblaCarouselType,
+} from "embla-carousel-react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
+type CarouselApi = UseEmblaCarouselType[1]
+type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
+type CarouselOptions = UseCarouselParameters[0]
+type CarouselPlugin = UseCarouselParameters[1]
+
 type CarouselProps = {
   opts?: CarouselOptions
-  plugins?: CarouselPlugin[]
+  plugins?: CarouselPlugin
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
 }
@@ -204,7 +204,6 @@ const CarouselPrevious = React.forwardRef<
     <Button
       ref={ref}
       variant={variant}
-      //@ts-ignore
       size={size}
       className={cn(
         "absolute  h-8 w-8 rounded-full",
@@ -234,7 +233,6 @@ const CarouselNext = React.forwardRef<
     <Button
       ref={ref}
       variant={variant}
-      //@ts-ignore
       size={size}
       className={cn(
         "absolute h-8 w-8 rounded-full",

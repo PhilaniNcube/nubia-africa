@@ -82,7 +82,7 @@ export function ServicesCarousel() {
   return (
 			<Carousel
 
-				plugins={[plugin.current]}
+				plugins={[plugin?.current]}
         opts={{loop:true}}
 				className="relative pt-10 mx-auto "
 				onMouseEnter={plugin.current.stop}
