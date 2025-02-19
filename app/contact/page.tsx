@@ -17,7 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useActionState } from "react";
 
-const page = () => {
+const ContactPage = () => {
   const [state, formAction, isPending] = useActionState(sendEmailAction, null);
 
   return (
@@ -125,4 +125,4 @@ const page = () => {
     </main>
   );
 };
-export default page;
+export default ContactPage;
