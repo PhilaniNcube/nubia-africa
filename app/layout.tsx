@@ -9,8 +9,8 @@ import { Toaster } from 'sonner';
 
 export const metadata:Metadata = {
   metadataBase: new URL('https://www.nubia.africa.com'),
-  title: 'Nubia Africa',
-  description: 'Nubia Africa is a tax and accounting firm that provides services to small businesses and large corporations',
+  title: 'Nubia Associates',
+  description: 'Nubia Associates is a tax and accounting firm that provides services to small businesses and large corporations',
   keywords: 'tax, accounting, business, corporation, services',
   icons: [
    {
@@ -20,13 +20,13 @@ export const metadata:Metadata = {
   openGraph: {
     url: 'https://nubia.africa.com',
     type: 'website',
-    title: 'Nubia Africa',
-    description: 'Nubia Africa is a tax and accounting firm that provides services to small businesses and large corporations',
+    title: 'Nubia Associates',
+    description: 'Nubia Associates is a tax and accounting firm that provides services to small businesses and large corporations',
     images: [{
       url: '/images/logo_square.webp',
       width: 400,
       height: 400,
-      alt: 'Nubia Africa logo',
+      alt: 'Nubia Associates logo',
     }]
   },
 }

@@ -15,7 +15,7 @@ export default function Footer() {
 						Get In Touch
 					</Link>
 					<div className="flex space-x-4">
-					  <p className="text-white">&copy; Nubia Africa {new Date().getFullYear()} </p>
+					  <p className="text-white">&copy; Nubia Associates {new Date().getFullYear()} </p>
 					</div>
 				</div>
 				<nav className="flex mt-4 space-x-6 md:mt-0 md:order-1">
