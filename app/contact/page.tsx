@@ -19,10 +19,9 @@ import { useActionState, useEffect } from "react";
 import { toast } from "sonner";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import { futura } from "@/fonts";
 
-export const futura = localFont({
-  src: "../../fonts/futura light bt.ttf",
-});
+
 
 const ContactPage = () => {
   const [state, formAction, isPending] = useActionState(sendEmailAction, null);
