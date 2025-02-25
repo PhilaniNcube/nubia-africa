@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -13,15 +13,14 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 
 const MobileNav = () => {
-
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex md:hidden">
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/images/logo-cropped.svg"
+            src="/images/nubia_africa.webp"
             width={328.82}
             height={323.15}
             alt="Logo"

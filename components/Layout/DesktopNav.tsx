@@ -40,9 +40,9 @@ const DesktopNav = () => {
       <div className="justify-between hidden bg-white md:flex">
         <Link href="/" className="relative flex">
           <Image
-            src="/images/logo-cropped.svg"
-            width={328.82}
-            height={323.15}
+            src="/images/nubia_africa.webp"
+            width={300}
+            height={202}
             alt="Logo"
             className="relative object-cover w-20 mix-blend-normal"
           />

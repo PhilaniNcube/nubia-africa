@@ -4,6 +4,7 @@ import { Metadata} from 'next'
 import Navbar from '@/components/Layout/Navbar';
 import { raleway } from '@/fonts';
 import Footer from '@/components/Layout/Footer';
+import { Toaster } from 'sonner';
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

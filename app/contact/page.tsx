@@ -15,10 +15,35 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
+import { toast } from "sonner";
 
 const ContactPage = () => {
   const [state, formAction, isPending] = useActionState(sendEmailAction, null);
+
+  // use the useEffect hook to show a toast message when the form is submitted
+  useEffect(() => {
+    if (state?.success) {
+      // show a success message
+      console.log("Message sent successfully");
+      toast('Message sent successfully', {
+        duration: 5000,
+        description: "We'll get back to you as soon as possible",
+        position: "top-center",
+      });
+
+    }
+
+    if (state?.error) {
+      // show an error message
+      console.log("An error occurred while sending the message");
+      toast('An error occurred while sending the message', {
+        duration: 5000,
+        description: "Please try again later",
+        position: "top-center",
+      });
+    }
+  }, [state]);
 
   return (
     <main className="container min-h-[calc(100vh-120px)] py-10">
@@ -46,14 +71,14 @@ const ContactPage = () => {
             </div>
             <div className="flex items-center my-2 space-x-3 font-medium">
               <PhoneCallIcon className="w-6 h-6" />
-              <Link href="tel:0027120040889">(012) 004 0889</Link>
+              <Link href="tel:00270120040012">(012) 004 0012</Link>
             </div>
-            <div className="flex items-center space-x-3 font-medium">
+            {/* <div className="flex items-center space-x-3 font-medium">
               <SmartphoneIcon className="w-6 h-6" />
               <Link href="https://wa.me/27836431755" target="_blank">
                 WhatsApp
               </Link>
-            </div>
+            </div> */}
             <div className="w-full mt-6">
               <Image
                 src="/images/contact.png"
@@ -116,10 +141,7 @@ const ContactPage = () => {
             </Button>
           </form>
 
-          {state?.error && <p className="mt-3 text-red-500">{state.error}</p>}
-          {state?.success && (
-            <p className="mt-3 text-green-500">{state.success}</p>
-          )}
+         
         </div>
       </div>
     </main>
