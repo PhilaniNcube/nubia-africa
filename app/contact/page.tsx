@@ -64,7 +64,7 @@ const ContactPage = () => {
               corporation, we can provide you with the services you need to
               succeed.
             </p>
-            <p className="mt-3 text-sm font-medium ">
+            <p className="mt-3 text-lg font-medium ">
               Contact us today for a free consultation!
             </p>
             <div className="flex items-center my-2 space-x-3 font-medium">

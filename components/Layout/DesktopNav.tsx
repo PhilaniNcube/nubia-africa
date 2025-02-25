@@ -36,7 +36,7 @@ const DesktopNav = () => {
 
 
   return (
-    <div className={raleway.className}>
+    <div >
       <div className="justify-between hidden bg-white md:flex">
         <Link href="/" className="relative flex">
           <Image
@@ -56,7 +56,7 @@ const DesktopNav = () => {
               href={link.href}
               className={`${
                 pathname === link.href ? "" : "hover:text-neutral-700/50"
-              } rounded-full px-3 py-1.5 text-black  text-sm font-medium font-raleway outline-2 outline-sky-400 focus-visible:outline relative transition`}
+              } rounded-full px-3 py-1.5 text-black  text-sm font-medium outline-2 outline-sky-400 focus-visible:outline relative transition`}
             >
               {pathname === link.href && (
                 <motion.div
