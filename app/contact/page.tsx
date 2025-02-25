@@ -20,7 +20,7 @@ import { toast } from "sonner";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const futura = localFont({
+export const futura = localFont({
   src: "../../fonts/futura light bt.ttf",
 });
 
