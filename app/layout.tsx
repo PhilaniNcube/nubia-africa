@@ -2,7 +2,7 @@ import './globals.css'
 
 import { Metadata} from 'next'
 import Navbar from '@/components/Layout/Navbar';
-import { raleway } from '@/fonts';
+import { futura, raleway } from '@/fonts';
 import Footer from '@/components/Layout/Footer';
 import { Toaster } from 'sonner';
 
@@ -14,7 +14,7 @@ export const metadata:Metadata = {
   keywords: 'tax, accounting, business, corporation, services',
   icons: [
    {
-    url: '/images/nubia_africa.webp',
+    url: '/images/logo_square.webp',
    }
   ],
   openGraph: {
@@ -23,9 +23,9 @@ export const metadata:Metadata = {
     title: 'Nubia Africa',
     description: 'Nubia Africa is a tax and accounting firm that provides services to small businesses and large corporations',
     images: [{
-      url: '/images/nubia_africa.webp',
-      width: 300,
-      height: 200,
+      url: '/images/logo_square.webp',
+      width: 400,
+      height: 400,
       alt: 'Nubia Africa logo',
     }]
   },
@@ -47,7 +47,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${raleway.className}`}>
+      <body className={`${futura.className}`}>
         <Navbar />
         {children}
         <Footer />
