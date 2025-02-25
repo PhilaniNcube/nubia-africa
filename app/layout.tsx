@@ -8,6 +8,7 @@ import { Toaster } from 'sonner';
 
 
 export const metadata:Metadata = {
+  metadataBase: new URL('https://www.nubia.africa.com'),
   title: 'Nubia Africa',
   description: 'Nubia Africa is a tax and accounting firm that provides services to small businesses and large corporations',
   keywords: 'tax, accounting, business, corporation, services',
