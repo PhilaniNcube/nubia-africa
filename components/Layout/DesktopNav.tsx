@@ -40,11 +40,11 @@ const DesktopNav = () => {
       <div className="justify-between hidden bg-white md:flex">
         <Link href="/" className="relative flex">
           <Image
-            src="/images/nubia_africa.webp"
+            src="/images/nubia_logo_01.webp"
             width={300}
             height={202}
             alt="Logo"
-            className="relative object-cover w-20 mix-blend-normal"
+            className="relative object-cover w-32 mix-blend-normal"
           />
 
         </Link>

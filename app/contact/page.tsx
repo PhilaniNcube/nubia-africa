@@ -17,6 +17,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useActionState, useEffect } from "react";
 import { toast } from "sonner";
+import localFont from "next/font/local";
+import { cn } from "@/lib/utils";
+
+const futura = localFont({
+  src: "../../fonts/futura light bt.ttf",
+});
 
 const ContactPage = () => {
   const [state, formAction, isPending] = useActionState(sendEmailAction, null);
@@ -26,18 +32,17 @@ const ContactPage = () => {
     if (state?.success) {
       // show a success message
       console.log("Message sent successfully");
-      toast('Message sent successfully', {
+      toast("Message sent successfully", {
         duration: 5000,
         description: "We'll get back to you as soon as possible",
         position: "top-center",
       });
-
     }
 
     if (state?.error) {
       // show an error message
       console.log("An error occurred while sending the message");
-      toast('An error occurred while sending the message', {
+      toast("An error occurred while sending the message", {
         duration: 5000,
         description: "Please try again later",
         position: "top-center",
@@ -46,7 +51,7 @@ const ContactPage = () => {
   }, [state]);
 
   return (
-    <main className="container min-h-[calc(100vh-120px)] py-10">
+    <main className={cn("container min-h-[calc(100vh-120px)] py-10", futura.className)}>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="w-full">
           <h1 className="text-4xl font-bold uppercase sr-only lg:text-6xl">
@@ -54,7 +59,7 @@ const ContactPage = () => {
           </h1>
           {/* <Separator className="my-4" /> */}
           <div className="w-full mt-3">
-            <p className="text-sm font-medium ">
+            <p className={cn("text-lg font-medium", futura.className)}>
               We&apos;re here to help you with all of your tax and accounting
               needs. Whether you&apos;re a small business owner or a large
               corporation, we can provide you with the services you need to
@@ -140,8 +145,6 @@ const ContactPage = () => {
               {isPending ? "Sending..." : "Send"}
             </Button>
           </form>
-
-         
         </div>
       </div>
     </main>

@@ -20,7 +20,7 @@ const MobileNav = () => {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/images/nubia_africa.webp"
+               src="/images/nubia_logo_01.webp"
             width={328.82}
             height={323.15}
             alt="Logo"
