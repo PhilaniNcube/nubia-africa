@@ -17,6 +17,10 @@ export const metadata:Metadata = {
    }
   ],
   openGraph: {
+    url: 'https://nubia.africa.com',
+    type: 'website',
+    title: 'Nubia Africa',
+    description: 'Nubia Africa is a tax and accounting firm that provides services to small businesses and large corporations',
     images: [{
       url: '/images/nubia_africa.webp',
       width: 300,
