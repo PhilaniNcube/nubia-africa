@@ -21,9 +21,9 @@ const approach = [
     image: "/images/strategy.jpg",
   },
   {
-    title: "Compliance and Accuracy",
+    title: "Professional Standards and Ethics",
     description:
-      "We emphasize accuracy and compliance in all our tax services, ensuring that our clients meet their tax obligations while minimizing the risk of penalties and audits.",
+      "We are committed to the highest professional standards and ethical practices by adhering to industry regulations. We uphold integrity and transparency, that fosters trust, safeguards client interests, and delivers on legal and moral principles.",
     image: "/images/accuracy.jpg",
   },
 ];
@@ -44,7 +44,7 @@ const select = [
   {
     title: "Accuracy and Compliance",
     description:
-      "We adhere to the highest standards of accuracy and compliance, ensuring that our clients meet their tax obligations while optimizing their tax positions.",
+      "We emphasize accuracy and compliance to ensure that all analyses, reports, and recommendations are based on precise data, thorough research, and industry best practices.",
     image: "/images/docs.jpg",
   },
   {
@@ -63,8 +63,8 @@ const select = [
 
 const page = () => {
   return (
-			<div className="container py-10 lg:py-6">
-				{/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
+    <div className="container py-10 lg:py-6">
+      {/* <div className="relative flex items-center justify-center w-full h-[70vh] isolate bg-blue-200/80">
         <h1 className="text-[4rem] md:text-[6rem] translate-x-16 lg:text-[8rem] relative z-10 text-white font-extrabold uppercase">
           About Us
         </h1>
@@ -77,57 +77,51 @@ const page = () => {
         />
       </div> */}
 
-				<section className="w-full">
-					<h2 className="mb-3 text-2xl font-bold text-gray-900 ">
-						Our Approach
-					</h2>
-					<div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
-						{approach.map((item, index) => (
-							<div key={item.title} className="w-full">
-								<Image
-									src={item.image}
-									width={1920}
-									height={1080}
-									alt={item.title}
-									className="grayscale"
-								/>
-								<p className="mt-2 text-sm">
-									<strong className="text-xl font-semibold">
-										{item.title}{" "}
-									</strong>{" "}
-									<br />
-									{item.description}
-								</p>
-							</div>
-						))}
-					</div>
-				</section>
-				<section className="w-full mt-10">
-					<h2 className="mt-4 mb-3 text-2xl font-bold text-gray-900 ">
-						Why Choose Us
-					</h2>
-					<div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-5">
-						{select.map((item, index) => (
-							<div className="w-full" key={item.title}>
-								<Image
-									src={item.image}
-									width={1920}
-									height={1080}
-									alt="Clients"
-									className="object-cover w-full grayscale aspect-video"
-								/>
-								<p className="mt-2 text-sm">
-									<strong className="text-xl font-semibold">
-										{item.title}{" "}
-									</strong>{" "}
-									<br />
-									{item.description}
-								</p>
-							</div>
-						))}
-					</div>
-				</section>
-			</div>
-		);
+      <section className="w-full">
+        <h2 className="mb-3 text-2xl font-bold text-gray-900 ">Our Approach</h2>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
+          {approach.map((item, index) => (
+            <div key={item.title} className="w-full">
+              <Image
+                src={item.image}
+                width={1920}
+                height={1080}
+                alt={item.title}
+                className="grayscale"
+              />
+              <p className="mt-2 text-sm">
+                <strong className="text-xl font-semibold">{item.title} </strong>{" "}
+                <br />
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="w-full mt-10">
+        <h2 className="mt-4 mb-3 text-2xl font-bold text-gray-900 ">
+          Why Choose Us
+        </h2>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+          {select.map((item, index) => (
+            <div className="w-full" key={item.title}>
+              <Image
+                src={item.image}
+                width={1920}
+                height={1080}
+                alt="Clients"
+                className="object-cover w-full grayscale aspect-video"
+              />
+              <p className="mt-2 text-sm">
+                <strong className="text-xl font-semibold">{item.title} </strong>{" "}
+                <br />
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 };
 export default page;
